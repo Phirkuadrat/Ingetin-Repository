@@ -85,7 +85,7 @@ public class ViewHome extends javax.swing.JFrame {
                     Thread.sleep(2000);
                     animator.start();
                 } catch (InterruptedException e) {
-                    
+                    System.err.println(e);
                 }
             }
         }).start();
@@ -109,7 +109,6 @@ public class ViewHome extends javax.swing.JFrame {
         btnLogout = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
 
         bg.setBackground(new java.awt.Color(204, 200, 170));
         bg.setMinimumSize(new java.awt.Dimension(1206, 600));
