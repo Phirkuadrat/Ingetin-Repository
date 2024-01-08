@@ -39,7 +39,7 @@ public class PanelHome extends javax.swing.JPanel {
         cbTampilkan = new javax.swing.JComboBox<>();
         cbTampilkan1 = new javax.swing.JComboBox<>();
 
-        setBackground(new java.awt.Color(204, 200, 170));
+        setBackground(new java.awt.Color(106, 156, 137));
 
         btnTambah.setForeground(new java.awt.Color(0, 0, 0));
         btnTambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/add (2).png"))); // NOI18N
@@ -53,7 +53,7 @@ public class PanelHome extends javax.swing.JPanel {
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setToolTipText("");
 
-        pnlKegiatan.setBackground(new java.awt.Color(204, 200, 170));
+        pnlKegiatan.setBackground(new java.awt.Color(106, 156, 137));
         pnlKegiatan.setLayout(new java.awt.GridBagLayout());
         jScrollPane1.setViewportView(pnlKegiatan);
 

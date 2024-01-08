@@ -41,7 +41,7 @@
     <Container class="javax.swing.JPanel" name="bg">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="aa" green="c8" red="cc" type="rgb"/>
+          <Color blue="89" green="9c" red="6a" type="rgb"/>
         </Property>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[1206, 600]"/>
@@ -56,7 +56,7 @@
     <Container class="javax.swing.JPanel" name="sideBar">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ef" green="ef" red="f1" type="rgb"/>
+          <Color blue="c3" green="d8" red="c1" type="rgb"/>
         </Property>
       </Properties>
 
@@ -67,7 +67,7 @@
         <Container class="javax.swing.JPanel" name="Icon">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ef" green="ef" red="f1" type="rgb"/>
+              <Color blue="c3" green="d8" red="c1" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -113,6 +113,9 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="btnMenu">
               <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="c3" green="d8" red="c1" type="rgb"/>
+                </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/com/ingetin/image/close.png"/>
                 </Property>
@@ -127,7 +130,7 @@
             <Container class="javax.swing.JPanel" name="jPanelProfil">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ef" green="ef" red="f1" type="rgb"/>
+                  <Color blue="c3" green="d8" red="c1" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -157,6 +160,9 @@
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ef" green="ef" red="f1" type="rgb"/>
                     </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="c3" green="d8" red="c1" type="rgb"/>
+                    </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/ingetin/image/user_5654521.png"/>
                     </Property>
@@ -173,7 +179,7 @@
             <Container class="javax.swing.JPanel" name="jPanelHome">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ef" green="ef" red="f1" type="rgb"/>
+                  <Color blue="c3" green="d8" red="c1" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -201,7 +207,10 @@
                 <Component class="javax.swing.JLabel" name="btnHome">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ef" green="ef" red="f1" type="rgb"/>
+                      <Color blue="c3" green="d8" red="c1" type="rgb"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="c3" green="d8" red="c1" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/ingetin/image/home1.png"/>
@@ -219,7 +228,7 @@
             <Container class="javax.swing.JPanel" name="jPanelDashboard">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ef" green="ef" red="f1" type="rgb"/>
+                  <Color blue="c3" green="d8" red="c1" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -247,7 +256,10 @@
                 <Component class="javax.swing.JLabel" name="btnDashboard">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ef" green="ef" red="f1" type="rgb"/>
+                      <Color blue="c3" green="d8" red="c1" type="rgb"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="c3" green="d8" red="c1" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/ingetin/image/Statik1.png"/>
@@ -265,7 +277,7 @@
             <Container class="javax.swing.JPanel" name="jPanel6">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ef" green="ef" red="f1" type="rgb"/>
+                  <Color blue="c3" green="d8" red="c1" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -292,7 +304,10 @@
                 <Component class="javax.swing.JLabel" name="btnLogout">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ef" green="ef" red="f1" type="rgb"/>
+                      <Color blue="c3" green="d8" red="c1" type="rgb"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="c3" green="d8" red="c1" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/ingetin/image/logout1.png"/>
