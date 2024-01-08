@@ -110,15 +110,15 @@ public class ViewHome extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        bg.setBackground(new java.awt.Color(204, 200, 170));
+        bg.setBackground(new java.awt.Color(106, 156, 137));
         bg.setMinimumSize(new java.awt.Dimension(1206, 600));
         bg.setPreferredSize(new java.awt.Dimension(1206, 600));
         bg.setLayout(new java.awt.CardLayout());
 
-        sideBar.setBackground(new java.awt.Color(241, 239, 239));
+        sideBar.setBackground(new java.awt.Color(193, 216, 195));
         sideBar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Icon.setBackground(new java.awt.Color(241, 239, 239));
+        Icon.setBackground(new java.awt.Color(193, 216, 195));
 
         btnMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/close.png"))); // NOI18N
         btnMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -128,7 +128,7 @@ public class ViewHome extends javax.swing.JFrame {
             }
         });
 
-        jPanelProfil.setBackground(new java.awt.Color(241, 239, 239));
+        jPanelProfil.setBackground(new java.awt.Color(193, 216, 195));
 
         btnProfil.setBackground(new java.awt.Color(241, 239, 239));
         btnProfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/user_5654521.png"))); // NOI18N
@@ -156,7 +156,7 @@ public class ViewHome extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanelHome.setBackground(new java.awt.Color(241, 239, 239));
+        jPanelHome.setBackground(new java.awt.Color(193, 216, 195));
 
         btnHome.setBackground(new java.awt.Color(241, 239, 239));
         btnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/home1.png"))); // NOI18N
@@ -184,7 +184,7 @@ public class ViewHome extends javax.swing.JFrame {
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        jPanelDashboard.setBackground(new java.awt.Color(241, 239, 239));
+        jPanelDashboard.setBackground(new java.awt.Color(193, 216, 195));
 
         btnDashboard.setBackground(new java.awt.Color(241, 239, 239));
         btnDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/Statik1.png"))); // NOI18N
@@ -212,7 +212,7 @@ public class ViewHome extends javax.swing.JFrame {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        jPanel6.setBackground(new java.awt.Color(241, 239, 239));
+        jPanel6.setBackground(new java.awt.Color(193, 216, 195));
 
         btnLogout.setBackground(new java.awt.Color(241, 239, 239));
         btnLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/logout1.png"))); // NOI18N
