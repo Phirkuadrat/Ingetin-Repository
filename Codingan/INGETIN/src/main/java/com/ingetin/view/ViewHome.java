@@ -6,6 +6,7 @@ import com.ingetin.view.panel.PanelHome;
 import com.ingetin.view.panel.PanelProfil;
 import java.awt.Color;
 import java.awt.Image;
+import java.net.URL;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -120,7 +121,7 @@ public class ViewHome extends javax.swing.JFrame {
 
         Icon.setBackground(new java.awt.Color(241, 239, 239));
 
-        btnMenu.setIcon(new javax.swing.ImageIcon("E:\\INGETIN\\Icon\\close.png")); // NOI18N
+        btnMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/close.png"))); // NOI18N
         btnMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -131,7 +132,7 @@ public class ViewHome extends javax.swing.JFrame {
         jPanelProfil.setBackground(new java.awt.Color(241, 239, 239));
 
         btnProfil.setBackground(new java.awt.Color(241, 239, 239));
-        btnProfil.setIcon(new javax.swing.ImageIcon("E:\\INGETIN\\Icon\\user_5654521.png")); // NOI18N
+        btnProfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/user_5654521.png"))); // NOI18N
         btnProfil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProfil.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -159,7 +160,7 @@ public class ViewHome extends javax.swing.JFrame {
         jPanelHome.setBackground(new java.awt.Color(241, 239, 239));
 
         btnHome.setBackground(new java.awt.Color(241, 239, 239));
-        btnHome.setIcon(new javax.swing.ImageIcon("E:\\INGETIN\\Icon\\home1.png")); // NOI18N
+        btnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/home1.png"))); // NOI18N
         btnHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -187,7 +188,7 @@ public class ViewHome extends javax.swing.JFrame {
         jPanelDashboard.setBackground(new java.awt.Color(241, 239, 239));
 
         btnDashboard.setBackground(new java.awt.Color(241, 239, 239));
-        btnDashboard.setIcon(new javax.swing.ImageIcon("E:\\INGETIN\\Icon\\Statik1.png")); // NOI18N
+        btnDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/Statik1.png"))); // NOI18N
         btnDashboard.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnDashboard.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -215,7 +216,7 @@ public class ViewHome extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(241, 239, 239));
 
         btnLogout.setBackground(new java.awt.Color(241, 239, 239));
-        btnLogout.setIcon(new javax.swing.ImageIcon("E:\\INGETIN\\Icon\\logout1.png")); // NOI18N
+        btnLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/logout1.png"))); // NOI18N
         btnLogout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -329,21 +330,26 @@ public class ViewHome extends javax.swing.JFrame {
         btnProfil.setVisible(!isClicked);
         btnDashboard.setVisible(!isClicked);
         if (isClicked){
-            changeImage(btnMenu, "E:/INGETIN/Icon/menu.png");
+            changeImage(btnMenu, "/com/ingetin/image/menu.png");
             panelSelected.setBackground(new Color(241,239,239));
         } else {
-            changeImage(btnMenu, "E:/INGETIN/Icon/close.png");
+            changeImage(btnMenu, "/com/ingetin/image/close.png");
             panelSelected.setBackground(new Color(221, 219, 219));
         }
         isClicked = !isClicked;
     }//GEN-LAST:event_btnMenuMouseClicked
 
     public void changeImage (JLabel button, String lokasi){
-        ImageIcon icon = new ImageIcon(lokasi);
-        Image img = icon.getImage();
-        Image newImg = img.getScaledInstance(btnMenu.getWidth(), btnMenu.getHeight(), img.SCALE_SMOOTH);
-        icon = new ImageIcon(newImg);
-        btnMenu.setIcon(icon);
+        URL imageURL = getClass().getResource(lokasi);
+        if (imageURL != null) {
+            ImageIcon icon = new ImageIcon(imageURL);
+            Image img = icon.getImage();
+            Image newImg = img.getScaledInstance(button.getWidth(), button.getHeight(), Image.SCALE_SMOOTH);
+            icon = new ImageIcon(newImg);
+            button.setIcon(icon);
+        } else {
+            System.err.println("Gambar tidak ditemukan: " + lokasi);
+        }
     }
     
     public void changeColorMenuSelect(JPanel panel){

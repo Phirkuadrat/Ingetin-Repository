@@ -1,4 +1,3 @@
-com\ingetin\model\KegiatanSelected.class
 com\ingetin\view\ViewHome$4.class
 com\ingetin\view\ViewLoginRegistrasi$6.class
 com\ingetin\model\Kegiatan.class
@@ -40,6 +39,7 @@ com\ingetin\view\panel\PanelHome$2.class
 com\ingetin\view\panel\PanelHome.class
 com\ingetin\view\panel\PanelDashboard.class
 com\ingetin\view\ViewHome$2.class
+com\ingetin\model\Profil.class
 com\ingetin\view\panel\Message$MessageType.class
 com\ingetin\view\ViewHome$5.class
 com\ingetin\view\ViewLoginRegistrasi$5.class

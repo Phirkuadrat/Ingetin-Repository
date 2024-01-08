@@ -62,4 +62,11 @@
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>com.mycompany.ingetin.INGETIN</exec.mainClass>
     </properties>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+            </resource>
+         </resources>
+    </build>
 </project>
