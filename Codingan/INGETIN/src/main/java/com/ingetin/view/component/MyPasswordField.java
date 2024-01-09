@@ -55,7 +55,7 @@ public class MyPasswordField extends JPasswordField {
     protected void paintComponent(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2.setColor(new Color(204, 200, 170));
+        g2.setColor(new Color(193, 216, 195));
         g2.fillRoundRect(0, 0, getWidth(), getHeight(), 5, 5);
         paintIcon(g);
         super.paintComponent(g);
@@ -69,7 +69,7 @@ public class MyPasswordField extends JPasswordField {
             ((Graphics2D) g).setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
             Insets ins = getInsets();
             FontMetrics fm = g.getFontMetrics();
-            g.setColor(new Color(152, 164, 164));
+            g.setColor(new Color(193, 216, 195));
             g.drawString(hint, ins.left, h / 2 + fm.getAscent() / 2 - 2);
         }
     }

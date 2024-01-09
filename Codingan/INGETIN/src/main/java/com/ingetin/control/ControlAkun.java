@@ -97,4 +97,18 @@ public class ControlAkun {
         return duplicate;
     }
 
+    public int getIdUser(String username, String password){
+        int stat = 0;
+        try {
+            Statement stm = con.createStatement();
+            ResultSet rs = stm.executeQuery("SELECT * FROM user WHERE username ='" 
+                    + username + "' AND password ='" + password + "'");
+            if (rs.next()) {
+                idUser = (rs.getInt("idUser"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return idUser;
+    }
 }

@@ -42,14 +42,15 @@ public class PanelProfil extends javax.swing.JPanel {
         jTextField4 = new javax.swing.JTextField();
         jComboBox2 = new javax.swing.JComboBox<>();
 
-        setBackground(new java.awt.Color(245, 232, 183));
+        setBackground(new java.awt.Color(106, 156, 137));
 
-        jPanel1.setBackground(new java.awt.Color(106, 156, 137));
+        jPanel1.setBackground(new java.awt.Color(193, 216, 195));
+        jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(0, 0, 0)));
 
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/woman (1).png"))); // NOI18N
 
-        jTextField2.setBackground(new java.awt.Color(106, 156, 137));
+        jTextField2.setBackground(new java.awt.Color(193, 216, 195));
         jTextField2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
 
@@ -90,9 +91,6 @@ public class PanelProfil extends javax.swing.JPanel {
                         .addGap(136, 136, 136)
                         .addComponent(jLabel4))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(jLabel6))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(127, 127, 127)
                         .addComponent(jLabel7))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -100,7 +98,10 @@ public class PanelProfil extends javax.swing.JPanel {
                         .addComponent(jLabel8))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(127, 127, 127)
-                        .addComponent(jLabel9)))
+                        .addComponent(jLabel9))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(jLabel6)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -123,33 +124,33 @@ public class PanelProfil extends javax.swing.JPanel {
                 .addContainerGap(98, Short.MAX_VALUE))
         );
 
-        jTextField1.setBackground(new java.awt.Color(245, 232, 183));
+        jTextField1.setBackground(new java.awt.Color(106, 156, 137));
         jTextField1.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(0, 0, 0));
         jTextField1.setText("Nama");
-        jTextField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(205, 92, 8)));
+        jTextField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(205, 92, 8));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Tanggal Lahir");
 
         jLabel3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(205, 92, 8));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Gender");
 
-        jTextField3.setBackground(new java.awt.Color(245, 232, 183));
+        jTextField3.setBackground(new java.awt.Color(106, 156, 137));
         jTextField3.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(205, 92, 8)));
+        jTextField3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(205, 92, 8));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Kota");
 
-        jTextField4.setBackground(new java.awt.Color(245, 232, 183));
+        jTextField4.setBackground(new java.awt.Color(106, 156, 137));
         jTextField4.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(205, 92, 8)));
+        jTextField4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
 
         jComboBox2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Laki-laki", "Perempuan" }));
@@ -170,7 +171,7 @@ public class PanelProfil extends javax.swing.JPanel {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jComboBox2, javax.swing.GroupLayout.Alignment.LEADING, 0, 269, Short.MAX_VALUE)
                         .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING)))
-                .addContainerGap(538, Short.MAX_VALUE))
+                .addContainerGap(537, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

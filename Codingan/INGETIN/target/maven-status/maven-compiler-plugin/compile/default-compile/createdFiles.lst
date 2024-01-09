@@ -2,6 +2,7 @@ com\ingetin\view\ViewHome$4.class
 com\ingetin\view\ViewHome$1.class
 com\ingetin\view\panel\PanelProfil.class
 com\ingetin\view\ViewHome$7.class
+com\ingetin\control\ControlProfil.class
 com\ingetin\view\component\MyTextField.class
 com\ingetin\control\ControlAkun.class
 com\ingetin\view\ViewLoginRegistrasi$7.class
@@ -48,4 +49,5 @@ com\ingetin\model\Profil.class
 com\ingetin\view\panel\Message$MessageType.class
 com\ingetin\view\ViewLoginRegistrasi$2.class
 com\ingetin\view\ViewHome$8.class
+com\ingetin\model\Profile.class
 com\ingetin\view\panel\PanelCover.class

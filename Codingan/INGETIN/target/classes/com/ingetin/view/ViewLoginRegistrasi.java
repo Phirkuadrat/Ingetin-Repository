@@ -1,6 +1,7 @@
 package com.ingetin.view;
 
 import com.ingetin.control.ControlAkun;
+import com.ingetin.control.ControlProfil;
 import com.ingetin.view.panel.Message;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -25,6 +26,7 @@ public class ViewLoginRegistrasi extends javax.swing.JFrame {
     private final double loginSize = 60;
     private boolean isLogin;
     private final ControlAkun control = new ControlAkun();
+    ControlProfil conProf = new ControlProfil();
     
     public ViewLoginRegistrasi() {
         initComponents();
@@ -134,6 +136,8 @@ public class ViewLoginRegistrasi extends javax.swing.JFrame {
                 showMessage(Message.MessageType.ERROR, "Email sudah digunakan");
             } else {
                 control.register(username, password, email);
+                int idUser = control.getIdUser(username, password);
+                conProf.addProfile(idUser);
                 showMessage(Message.MessageType.SUCCESS, "Akun berhasil dibuat");
             }
         } catch (SQLException e) {
@@ -206,7 +210,8 @@ public class ViewLoginRegistrasi extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1200, 600));
 
-        bg.setBackground(new java.awt.Color(241, 239, 239));
+        bg.setBackground(new java.awt.Color(193, 216, 195));
+        bg.setForeground(new java.awt.Color(193, 216, 195));
         bg.setOpaque(true);
 
         javax.swing.GroupLayout bgLayout = new javax.swing.GroupLayout(bg);

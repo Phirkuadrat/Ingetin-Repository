@@ -126,7 +126,7 @@ public class PanelCover extends javax.swing.JPanel {
         Graphics2D g2 = (Graphics2D) grphcs;
 
         // Set warna latar komponen
-        Color backgroundColor = new Color(204, 200, 170);
+        Color backgroundColor = new Color(106, 156, 137);
         g2.setColor(backgroundColor);
         g2.fillRect(0, 0, getWidth(), getHeight());
 

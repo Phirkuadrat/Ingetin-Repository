@@ -29,7 +29,7 @@ public class ViewHome extends javax.swing.JFrame {
         layout = new MigLayout("fill, insets 0");
         bg.setLayout(layout);
         showMessage(Message.MessageType.SUCCESS, "Berhasil Login");
-        jPanelHome.setBackground(new Color(221, 219, 219));
+        jPanelHome.setBackground(new Color(193, 216, 195));
         panelSelected = jPanelHome;
         bg.add(panelHome);
         bg.revalidate();
@@ -357,9 +357,9 @@ public class ViewHome extends javax.swing.JFrame {
     }
     
     public void changeColorMenuSelect(JPanel panel){
-        panelSelected.setBackground(new Color(241,239,239));
+        panelSelected.setBackground(new Color(193, 216, 195));
         
-        panel.setBackground(new Color(221, 219, 219));
+        panel.setBackground(new Color(193, 216, 195));
         panelSelected = panel;
     }
     
