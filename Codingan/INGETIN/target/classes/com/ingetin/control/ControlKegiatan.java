@@ -61,9 +61,9 @@ public class ControlKegiatan {
     
     public int hitungSelesai() {
         int jumlahSelesai = 0;
-
+        
         try {
-            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE jenis = 'Tugas' AND status = 'Selesai'";
+            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE idUser = " + akun.getIdUser() + " AND jenis = 'Tugas' AND status = 'Selesai'";
             
             try (PreparedStatement preparedStatement = con.prepareStatement(query);
                  ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -82,7 +82,7 @@ public class ControlKegiatan {
         int belumSelesai = 0;
 
         try {
-            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE jenis = 'Tugas' AND status = 'Belum Selesai'";
+            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE idUser = " + akun.getIdUser() + " AND jenis = 'Tugas' AND status = 'Belum Selesai'";
             
             try (PreparedStatement preparedStatement = con.prepareStatement(query);
                  ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -101,7 +101,7 @@ public class ControlKegiatan {
         int akanDatang = 0;
 
         try {
-            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE jenis = 'Acara' AND status = 'Belum Selesai'";
+            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE idUser = " + akun.getIdUser() + " AND jenis = 'Acara' AND status = 'Belum Selesai'";
             
             try (PreparedStatement preparedStatement = con.prepareStatement(query);
                  ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -176,7 +176,7 @@ public class ControlKegiatan {
     public int getKegiatanSelesai(){
         int hasil = 0;
         try {
-            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE status = 'Selesai'";
+            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE idUser = " + akun.getIdUser() + " AND status = 'Selesai'";
             
             try (PreparedStatement preparedStatement = con.prepareStatement(query);
                  ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -194,7 +194,7 @@ public class ControlKegiatan {
     public int getKegiatanBelumSelesai(){
         int hasil = 0;
         try {
-            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE status = 'Belum Selesai'";
+            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE idUser = " + akun.getIdUser() + " AND status = 'Belum Selesai'";
             
             try (PreparedStatement preparedStatement = con.prepareStatement(query);
                  ResultSet resultSet = preparedStatement.executeQuery()) {
