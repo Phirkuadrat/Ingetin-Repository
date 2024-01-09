@@ -54,7 +54,6 @@ public class ControlKegiatan {
             preparedStatement.setString(5, status);
             preparedStatement.setInt(6, idKegiatan);
             preparedStatement.executeUpdate();
-             
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -173,4 +172,41 @@ public class ControlKegiatan {
         }
         return idKegiatan;
     }
+
+    public int getKegiatanSelesai(){
+        int hasil = 0;
+        try {
+            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE status = 'Selesai'";
+            
+            try (PreparedStatement preparedStatement = con.prepareStatement(query);
+                 ResultSet resultSet = preparedStatement.executeQuery()) {
+                
+                if (resultSet.next()) {
+                    hasil = resultSet.getInt("total");
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return hasil;
+    }
+    
+    public int getKegiatanBelumSelesai(){
+        int hasil = 0;
+        try {
+            String query = "SELECT COUNT(*) AS total FROM kegiatan WHERE status = 'Belum Selesai'";
+            
+            try (PreparedStatement preparedStatement = con.prepareStatement(query);
+                 ResultSet resultSet = preparedStatement.executeQuery()) {
+                
+                if (resultSet.next()) {
+                    hasil = resultSet.getInt("total");
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return hasil;
+    }
+    
 }

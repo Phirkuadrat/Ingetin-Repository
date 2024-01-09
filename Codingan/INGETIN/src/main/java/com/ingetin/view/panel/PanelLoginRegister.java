@@ -39,6 +39,7 @@ public class PanelLoginRegister extends javax.swing.JLayeredPane {
         MyTextField txtUsername = new MyTextField();
         txtUsername.setPrefixIcon(new ImageIcon(getClass().getResource("/com/ingetin/image/user.png")));
         txtUsername.setHint("Username");
+        txtUsername.setForeground(new Color(0, 0, 0));
         register.add(txtUsername, "w 60%");
         
         MyTextField txtEmail = new MyTextField();
@@ -137,7 +138,7 @@ public class PanelLoginRegister extends javax.swing.JLayeredPane {
 
         setLayout(new java.awt.CardLayout());
 
-        register.setBackground(new java.awt.Color(241, 239, 239));
+        register.setBackground(new java.awt.Color(106, 156, 137));
 
         javax.swing.GroupLayout registerLayout = new javax.swing.GroupLayout(register);
         register.setLayout(registerLayout);
@@ -152,7 +153,7 @@ public class PanelLoginRegister extends javax.swing.JLayeredPane {
 
         add(register, "card2");
 
-        login.setBackground(new java.awt.Color(241, 239, 239));
+        login.setBackground(new java.awt.Color(106, 156, 137));
 
         javax.swing.GroupLayout loginLayout = new javax.swing.GroupLayout(login);
         login.setLayout(loginLayout);

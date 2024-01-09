@@ -19,7 +19,7 @@
     <Container class="javax.swing.JPanel" name="register">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ef" green="ef" red="f1" type="rgb"/>
+          <Color blue="89" green="9c" red="6a" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -44,7 +44,7 @@
     <Container class="javax.swing.JPanel" name="login">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ef" green="ef" red="f1" type="rgb"/>
+          <Color blue="89" green="9c" red="6a" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>

@@ -28,69 +28,13 @@ public class ViewHome extends javax.swing.JFrame {
         initComponents();
         layout = new MigLayout("fill, insets 0");
         bg.setLayout(layout);
-        showMessage(Message.MessageType.SUCCESS, "Berhasil Login");
-        jPanelHome.setBackground(new Color(193, 216, 195));
+        jPanelHome.setBackground(new Color(106, 156, 137));
         panelSelected = jPanelHome;
         bg.add(panelHome);
         bg.revalidate();
         bg.repaint();
     }
-    
-    public void showMessage(Message.MessageType messageType, String message) {
-        Message ms = new Message();
-        ms.showMessage(messageType, message);
-        TimingTarget target = new TimingTargetAdapter() {
-            @Override
-            public void begin() {
-                if (!ms.isShow()) {
-                    bg.add(ms, "pos 0.5al -30, gaptop 20", 0); //  Insert to bg fist index 0
-                    ms.setVisible(true);
-                    bg.repaint();
-                }
-            }
-
-            @Override
-            public void timingEvent(float fraction) {
-                float f;
-                if (ms.isShow()) {
-                    f = 40 * (1f - fraction);
-                } else {
-                    f = 40 * fraction;
-                }
-                layout.setComponentConstraints(ms, "pos 0.5al " + (int) (f - 30));
-                bg.repaint();
-                bg.revalidate();
-            }
-
-            @Override
-            public void end() {
-                if (ms.isShow()) {
-                    bg.remove(ms);
-                    bg.repaint();
-                    bg.revalidate();
-                } else {
-                    ms.setShow(true);
-                }
-            }
-        };
-        Animator animator = new Animator(300, target);
-        animator.setResolution(0);
-        animator.setAcceleration(0.5f);
-        animator.setDeceleration(0.5f);
-        animator.start();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(2000);
-                    animator.start();
-                } catch (InterruptedException e) {
-                    System.err.println(e);
-                }
-            }
-        }).start();
-    }
-
+   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -335,10 +279,10 @@ public class ViewHome extends javax.swing.JFrame {
         btnDashboard.setVisible(!isClicked);
         if (isClicked){
             changeImage(btnMenu, "/com/ingetin/image/menu.png");
-            panelSelected.setBackground(new Color(241,239,239));
+            panelSelected.setBackground(new Color(193, 216, 195));
         } else {
             changeImage(btnMenu, "/com/ingetin/image/close.png");
-            panelSelected.setBackground(new Color(221, 219, 219));
+            panelSelected.setBackground(new Color(106, 156, 137));
         }
         isClicked = !isClicked;
     }//GEN-LAST:event_btnMenuMouseClicked
@@ -359,7 +303,7 @@ public class ViewHome extends javax.swing.JFrame {
     public void changeColorMenuSelect(JPanel panel){
         panelSelected.setBackground(new Color(193, 216, 195));
         
-        panel.setBackground(new Color(193, 216, 195));
+        panel.setBackground(new Color(106, 156, 137));
         panelSelected = panel;
     }
     

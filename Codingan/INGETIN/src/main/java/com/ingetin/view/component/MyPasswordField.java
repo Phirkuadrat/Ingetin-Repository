@@ -46,7 +46,7 @@ public class MyPasswordField extends JPasswordField {
     public MyPasswordField() {
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         setBackground(new Color(0, 0, 0, 0));
-        setForeground(new Color(25, 23, 23));
+        setForeground(new Color(0, 0, 0));
         setFont(new java.awt.Font("sansserif", 0, 13));
         setSelectionColor(new Color(75, 175, 152));
     }
@@ -69,7 +69,7 @@ public class MyPasswordField extends JPasswordField {
             ((Graphics2D) g).setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
             Insets ins = getInsets();
             FontMetrics fm = g.getFontMetrics();
-            g.setColor(new Color(193, 216, 195));
+            g.setColor(new Color(152, 164, 164));
             g.drawString(hint, ins.left, h / 2 + fm.getAscent() / 2 - 2);
         }
     }

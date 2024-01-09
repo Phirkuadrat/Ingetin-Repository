@@ -109,15 +109,19 @@ public class PanelCover extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ingetin/image/logo ingetin.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jLabel1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jLabel1)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -126,7 +130,7 @@ public class PanelCover extends javax.swing.JPanel {
         Graphics2D g2 = (Graphics2D) grphcs;
 
         // Set warna latar komponen
-        Color backgroundColor = new Color(106, 156, 137);
+        Color backgroundColor = new Color(193, 216, 195);
         g2.setColor(backgroundColor);
         g2.fillRect(0, 0, getWidth(), getHeight());
 
@@ -138,5 +142,6 @@ public class PanelCover extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

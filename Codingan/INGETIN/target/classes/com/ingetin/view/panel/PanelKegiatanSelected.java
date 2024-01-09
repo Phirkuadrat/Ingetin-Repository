@@ -11,7 +11,6 @@ import javax.swing.SwingUtilities;
 
 public class PanelKegiatanSelected extends javax.swing.JPanel {
     ControlKegiatan controlKegiatan = new ControlKegiatan();
-    Akun akun = new Akun();
     Kegiatan kegiatan = new Kegiatan();
     
     public PanelKegiatanSelected() {
